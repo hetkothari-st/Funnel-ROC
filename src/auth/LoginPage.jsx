@@ -67,7 +67,7 @@ export default function LoginPage() {
                     </div>
                     <h1 className="text-6xl md:text-7xl font-black text-white tracking-tight leading-none">
                         FUNNEL
-                        <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"> ROC</span>
+                        <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent" style={{ WebkitTextStroke: '1px rgba(56,189,248,0.4)' }}> ROC</span>
                     </h1>
                     <p className="text-[13px] text-white/40 mt-4">
                         Sign in to continue
