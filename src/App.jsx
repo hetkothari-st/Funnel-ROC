@@ -26,8 +26,6 @@ const App = () => {
   // WebSocket
   const { status, subscribe, unsubscribe } = useMarketData(!!user, wsCredential);
 
-  if (!user) return <LoginPage />;
-
   // Load contracts
   useEffect(() => {
     fetch('/contracts_nsefo.json')
@@ -130,6 +128,8 @@ const App = () => {
       )
     );
   }, [activeMonitorId]);
+
+  if (!user) return <LoginPage />;
 
   if (contractsLoading) {
     return (
